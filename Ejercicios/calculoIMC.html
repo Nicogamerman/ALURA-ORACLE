@@ -1,0 +1,74 @@
+<meta charset="UTF-8">
+
+<h1>CALCULO DE IMC</h1>
+
+<script>
+    // function saltarLinea(){
+    //     document.write("<br>");
+    //     document.write("<br>");
+    //     document.write("<br>");
+    // }
+
+    // function imprimir(frase){
+    //     document.write(frase);
+    //     saltarLinea();
+    // }
+    
+    // function calcularImc(peso,altura){
+
+    //     imc = peso/(altura * altura);
+    //     imprimir("El IMC calculado es: " + imc);
+
+    // }
+
+    // //funcion:
+    // pesoCristian = 71
+    // alturaCristian = 1.72
+    // //imcCristian= pesoCristian/(alturaCristian * alturaCristian);
+    // calcularImc(pesoCristian,alturaCristian);
+    // imcCristian= calcularImc(pesoCristian,alturaCristian); //llamo funcion calcular imc, y le paso los dos parametros, peso y altura de Cristian
+    // imprimir("El IMC de Cristian es: " + imcCristian);
+
+    // //ejemplo sin funcion:
+    // pesoFelipe = 75
+    // alturaFelipe = 1.73
+    // imcFelipe= pesoFelipe/(alturaFelipe * alturaFelipe);
+
+    // imprimir("El IMC de Felipe es: " + imcFelipe);
+
+    // //funcion:
+    // pesoJuan = 88
+    // alturaJuan = 1.90
+    // calcularImc(pesoJuan,alturaJuan);
+    // imcJuan = calcularImc(pesoJuan,alturaJuan);
+    // imprimir("El IMC de Juan es: " + imcJuan)
+
+
+</script>
+
+<!-- Codigo aun mas eficinete y limpio: -->
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+    
+    function calcularImc(peso,altura,nombre){
+
+        imc = peso/(altura * altura);
+        imprimir("El IMC calculado de "+ nombre +" es: " + imc); //imprimir "frase", a la funcion le paso la variable frase para que me imprima la linea.
+
+    }
+
+    calcularImc(71,1.8,"Pedro");
+    calcularImc(75,1.75,"Matias");
+    calcularImc(61,1.67,"Rocio");
+
+
+</script>

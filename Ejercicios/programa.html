@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+<script>
+    document.write("La edad de Cristian es");
+    document.write("<br>");
+    document.write(20+15);
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("La edad de Juan es");
+    document.write("<br>");
+    document.write(10+15);
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("La edad de Pablo es");
+    document.write("<br>");
+    document.write(30+15);
+    document.write("<br>");
+    document.write("<br>");
+
+    function saltarLinea(){ //salto de linea con funcion
+        document.write("<br>");
+    }
+
+    var saltoDeLinea = "<br><br><br>" //salto de linea con variable
+
+    saltarLinea(); //salto de linea con funcion
+    saltarLinea();
+    saltarLinea();
+
+    var anio= 2024;
+    document.write("La edad de Cristian es " + (anio-2000) + " años");
+
+    anio = 2030;
+    document.write(saltoDeLinea + "La edad de Juan es " + (anio-1995) + " años");
+
+    anio = 2020;
+    document.write(saltoDeLinea + "La edad de Pablo es " + (anio-1998) + " años");
+
+    document.write(saltoDeLinea) //salto de linea con variable
+
+    var edadCristian = 24;
+    var edadJuan = 35;
+    var edadPablo = 22;
+
+    var nombre1 = "Cristian";
+    var nombre2 = "Juan";
+    var nombre3 = "Pablo";
+
+    promedio = (edadCristian+edadJuan+edadPablo)/3;
+
+    document.write("El promedio de las edades de " + nombre1 + ", " + nombre2 + " y " + nombre3 + "es: " + Math.round(promedio));
+    document.write(saltoDeLinea)
+
+</script>
